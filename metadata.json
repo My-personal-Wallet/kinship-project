@@ -1,0 +1,8 @@
+{
+  "name": " Kinship and Family ",
+  "description": "A modern, animated application showcasing Islamic teachings on kinship and the UAE Year of Family BY SHAIMAL.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

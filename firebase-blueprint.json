@@ -1,0 +1,51 @@
+{
+  "entities": {
+    "User": {
+      "title": "User",
+      "description": "App user profile.",
+      "type": "object",
+      "properties": {
+        "uid": { "type": "string" },
+        "email": { "type": "string", "format": "email" },
+        "displayName": { "type": "string" }
+      },
+      "required": ["uid", "email"]
+    },
+    "ChatMessage": {
+      "title": "Chat Message",
+      "description": "A message in a chat thread.",
+      "type": "object",
+      "properties": {
+        "userId": { "type": "string" },
+        "text": { "type": "string" },
+        "createdAt": { "type": "string", "format": "date-time" },
+        "role": { "type": "string", "enum": ["user", "model"] }
+      },
+      "required": ["userId", "text", "createdAt", "role"]
+    },
+    "Favorite": {
+      "title": "Favorite",
+      "description": "A favorite teaching.",
+      "type": "object",
+      "properties": {
+        "userId": { "type": "string" },
+        "teachingId": { "type": "string" }
+      },
+      "required": ["userId", "teachingId"]
+    }
+  },
+  "firestore": {
+    "/users/{userId}": {
+      "schema": "User",
+      "description": "User profiles"
+    },
+    "/chatThreads/{threadId}/messages": {
+      "schema": "ChatMessage",
+      "description": "Messages for a user's chat thread"
+    },
+    "/favorites/{favId}": {
+      "schema": "Favorite",
+      "description": "Favorites for a user"
+    }
+  }
+}

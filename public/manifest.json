@@ -1,0 +1,40 @@
+{
+  "id": "/",
+  "name": "Kinship & Family in Islam",
+  "short_name": "Kinship",
+  "description": "A modern, animated application showcasing Islamic teachings on kinship, Hadiths, Surah An-Nisa (4:36), and the UAE Year of the Family.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#064e3b",
+  "theme_color": "#065f46",
+  "icons": [
+    {
+      "src": "/assets/kinship_icon.jpg",
+      "sizes": "192x192",
+      "type": "image/jpeg",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/assets/kinship_icon.jpg",
+      "sizes": "512x512",
+      "type": "image/jpeg",
+      "purpose": "any maskable"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Hadith & Verse",
+      "short_name": "Hadith",
+      "description": "Authentic Hadith on Kinship",
+      "url": "/teachings"
+    },
+    {
+      "name": "Quiz",
+      "short_name": "Quiz",
+      "description": "Kinship 10-Question Quiz",
+      "url": "/quiz"
+    }
+  ]
+}
